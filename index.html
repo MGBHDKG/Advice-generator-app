@@ -10,18 +10,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;800&display=swap" rel="stylesheet"> 
   <title>Advice generator app</title>
+  <script src="src/js/script.js"></script>
 </head>
 <main id="main">
   <body>
     <section>
       <!-- quote generated in Javascript with an API-->
       <p id="advice"></p>
-      <p id="quote"></p>
+      <p id="quote"><script>generate()</script></p>
       <img id="img1" src="images/pattern-divider-desktop.svg" alt="Pattern divider">
       <img id="img2" src="images/pattern-divider-mobile.svg" alt="Pattern divider">
-      <button><img src="images/icon-dice.svg" alt="Generate button"></button>
+      <button onclick="generate()"><img src="images/icon-dice.svg" alt="Generate button"></button>
     </section>
   </body>
 </main>
-<script src="src/js/script.js"></script>
 </html>
